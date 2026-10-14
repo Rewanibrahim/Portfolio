@@ -223,6 +223,18 @@ html,body{overflow-x:clip}
 .bar i{display:block;height:100%;width:0;border-radius:99px;background:linear-gradient(90deg,var(--brand),var(--brand-2));transition:width 1.4s var(--ease) .2s}
 .in-view .bar i{width:var(--w)}
 
+/* ===== Certifications ===== */
+.certs{padding:clamp(40px,6vw,80px) 0}
+.cert-grid{max-width:var(--max);margin:0 auto;padding:0 var(--gutter);display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.cert{display:flex;flex-direction:column;text-decoration:none;color:inherit;border-radius:var(--r-md);overflow:hidden;background:var(--surface);box-shadow:0 1px 0 var(--line);transition:transform .4s var(--ease)}
+.cert:hover{transform:translateY(-4px)}
+.cert img{aspect-ratio:4/3;object-fit:cover;background:var(--bg)}
+.cert div{padding:16px 18px}
+.cert h3{font-size:17px;font-weight:600}
+.cert p{color:var(--muted);font-size:14.5px;margin-top:4px}
+@media (max-width:1000px){.cert-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.cert-grid{grid-template-columns:1fr}}
+
 /* ===== Contact ===== */
 .contact{background:var(--ink);color:#fff;padding:clamp(80px,12vw,150px) var(--gutter) 30px;position:relative;overflow:hidden}
 .contact::before{content:"";position:absolute;width:900px;height:900px;right:-300px;top:-400px;border-radius:50%;background:radial-gradient(circle,rgba(74,92,255,.35),transparent 65%)}
