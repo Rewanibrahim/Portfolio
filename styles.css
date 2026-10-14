@@ -228,7 +228,7 @@ html,body{overflow-x:clip}
 .cert-grid{max-width:var(--max);margin:0 auto;padding:0 var(--gutter);display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .cert{display:flex;flex-direction:column;text-decoration:none;color:inherit;border-radius:var(--r-md);overflow:hidden;background:var(--surface);box-shadow:0 1px 0 var(--line);transition:transform .4s var(--ease)}
 .cert:hover{transform:translateY(-4px)}
-.cert img{aspect-ratio:4/3;object-fit:cover;background:var(--bg)}
+.cert img{aspect-ratio:4/3;object-fit:contain;background:var(--bg);padding:10px}
 .cert div{padding:16px 18px}
 .cert h3{font-size:17px;font-weight:600}
 .cert p{color:var(--muted);font-size:14.5px;margin-top:4px}
