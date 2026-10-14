@@ -4,352 +4,629 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Rewan Ibrahim · UI/UX Designer & Front-End Developer</title>
-<meta name="description" content="Rewan Ibrahim designs mobile apps and dashboards in Figma and builds them in code. Case studies: BloomTech, Happy Tails, Closet, TMHM.">
+<meta name="description" content="Rewan Ibrahim designs mobile apps and dashboards from user research to Figma prototypes, and builds them in code. Projects: BloomTech, Happy Tails, Closet, TMHM, Red Soil Monster.">
 <meta property="og:title" content="Rewan Ibrahim · UI/UX Designer & Front-End Developer">
 <meta property="og:description" content="Mobile apps and dashboards, from user research to Figma prototypes to working code.">
 <meta property="og:image" content="assets/img/bloomtech/browse.webp">
+<meta name="theme-color" content="#0b1020">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700&family=Onest:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<a class="skip" href="#work">Skip to work</a>
+<a class="skip" href="#work">Skip to projects</a>
 
-<header class="nav" id="top">
-  <a class="brand" href="#top" aria-label="Rewan Ibrahim, home">
-    <span class="brand-mark" aria-hidden="true">R</span>
-    <span>Rewan Ibrahim</span>
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="Rewan Ibrahim, back to top">
+    <span class="brand-mark" aria-hidden="true">RI</span>
+    <span class="brand-name">Rewan Ibrahim</span>
   </a>
   <nav aria-label="Main">
-    <a href="#work">Work</a>
-    <a href="#process">Process</a>
-    <a href="#toolkit">Toolkit</a>
+    <a href="#work">Projects</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
     <a href="#experience">Experience</a>
-    <a class="nav-cta" href="#contact">Contact</a>
+    <a class="nav-cta" href="#contact">Hire me</a>
   </nav>
 </header>
 
-<main>
-<!-- HERO: a Figma-like canvas that turns into code -->
-<section class="hero">
-  <div class="hero-copy">
-    <p class="hero-hello">Hi, I'm Rewan.</p>
-    <h1>I design interfaces in Figma and build&nbsp;them in code.</h1>
-    <p class="hero-sub">UI/UX designer and front-end developer in Alexandria, Egypt. I take mobile apps and dashboards from user interviews to high-fidelity prototypes, and hand developers files they can actually build.</p>
-    <div class="hero-actions">
-      <a class="btn btn-ink" href="#work">See the case studies</a>
-      <a class="btn btn-line" href="https://www.behance.net/rewanibrahem1" target="_blank" rel="noopener">Behance</a>
+<main id="top">
+<!-- ============ HERO ============ -->
+<section class="hero" aria-labelledby="hero-name">
+  <div class="hero-bg" aria-hidden="true"><span class="glow"></span></div>
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <p class="fade-up status"><span class="pulse" aria-hidden="true"></span>Open to junior UI/UX & front-end roles</p>
+      <h1 id="hero-name" class="hero-name">
+        <span class="line"><span class="word">Rewan</span></span>
+        <span class="line"><span class="word">Ibrahim</span></span>
+      </h1>
+      <p class="fade-up d2 hero-role">
+        UI/UX designer who
+        <span class="rotator" aria-live="polite"><span class="rot-word">designs mobile apps</span></span>
+      </p>
+      <p class="fade-up d3 hero-sub">I take products from user interviews to high-fidelity Figma prototypes, then help build them in Flutter and the web. CS & AI graduate, based in Alexandria, Egypt.</p>
+      <div class="fade-up d4 hero-actions">
+        <a class="btn btn-brand" href="#work">Explore projects</a>
+        <a class="btn btn-ghost-light" href="assets/Rewan_Ibrahim_CV.pdf" download>Download CV</a>
+      </div>
+      <dl class="fade-up d5 hero-stats">
+        <div><dd><span data-count="5">5</span></dd><dt>projects in this portfolio</dt></div>
+        <div><dd><span data-count="77">77</span>+</dd><dt>high-fidelity screens designed</dt></div>
+        <div><dd><span data-count="3.73" data-decimals="2">3.73</span></dd><dt>CGPA, B.Sc. CS & AI</dt></div>
+      </dl>
     </div>
-    <dl class="hero-facts">
-      <div><dt>Screens designed</dt><dd data-count="77">77</dd></div>
-      <div><dt>Shipped with developers</dt><dd>2 apps</dd></div>
-      <div><dt>CS & AI degree, CGPA</dt><dd>3.73</dd></div>
-    </dl>
-  </div>
 
-  <div class="canvas" aria-label="Animated illustration: a Figma frame being selected and turned into CSS" role="img">
-    <div class="canvas-bar">
-      <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-      <span class="canvas-file">BloomTech / Home</span>
-      <span class="canvas-zoom">100%</span>
-    </div>
-    <div class="canvas-stage">
-      <div class="frame-label">iPhone 16 Pro Max</div>
-      <div class="phone hero-phone">
-        <img src="assets/img/bloomtech/browse.webp" alt="" width="440" height="956">
-      </div>
-      <div class="selection">
-        <i></i><i></i><i></i><i></i>
-        <span class="sel-size">Card / Plant system</span>
-      </div>
-      <div class="chip chip-1">Auto layout</div>
-      <div class="chip chip-2">Component</div>
-      <div class="chip chip-3">Dev Mode</div>
-      <div class="cursor" aria-hidden="true">
-        <svg width="18" height="18" viewBox="0 0 18 18"><path d="M1 1l6 15 2.4-6.6L16 7z" fill="currentColor" stroke="#fff" stroke-width="1.2"/></svg>
-        <span>Rewan</span>
-      </div>
-    </div>
-    <pre class="code" aria-hidden="true"><code id="typed"></code><span class="caret"></span></pre>
-  </div>
-</section>
-
-<!-- WORK -->
-<section class="work" id="work" aria-labelledby="work-h">
-  <div class="section-head">
-    <h2 id="work-h">Selected work</h2>
-    <p>Four apps, each taken from a problem to a set of screens someone could build. Click any screen to see it full size.</p>
-  </div>
-
-  <!-- BloomTech -->
-  <article class="case" id="bloomtech" style="--accent:#3f6b3a; --tint:#e4ece0;">
-    <div class="case-intro">
-      <img class="case-logo" src="assets/img/bloomtech/logo.webp" alt="BloomTech logo" width="120" height="100" loading="lazy">
-      <div>
-        <h3>BloomTech</h3>
-        <p class="case-kind">Smart agriculture monitoring app · Graduation project, 2025</p>
-      </div>
-    </div>
-    <div class="case-body">
-      <div class="case-text">
-        <p class="lede">A B2B app that helps agricultural companies watch large farms and gardens through IoT sensors, so non-technical staff can see what needs attention without reading raw data.</p>
-        <dl class="case-meta">
-          <div><dt>Role</dt><dd>Sole UI/UX designer, team of 6</dd></div>
-          <div><dt>Scope</dt><dd>26 screens, user & admin flows</dd></div>
-          <div><dt>Built with</dt><dd>Figma → Flutter, Firebase, real hardware</dd></div>
-        </dl>
-        <h4>What I did</h4>
-        <ul class="ticks">
-          <li>Owned the end-to-end UI/UX: onboarding, user and admin registration, home, plant management, profile, notifications and settings.</li>
-          <li>Designed a live sensor dashboard for soil moisture, pH, EC and light, with alerts that flag readings needing action.</li>
-          <li>Designed a scan flow that circles diseased areas on a leaf photo and explains how to treat them.</li>
-          <li>Handed off Figma files to 2 Flutter developers, who built a working app connected to real sensors.</li>
-        </ul>
-      </div>
-      <div class="strip" tabindex="0" aria-label="BloomTech screens, scroll horizontally">
-        <figure><img src="assets/img/bloomtech/welcome.webp" alt="Welcome screen with plant photography" loading="lazy" width="440" height="956"><figcaption>Welcome</figcaption></figure>
-        <figure><img src="assets/img/bloomtech/login.webp" alt="Login screen with user and admin toggle" loading="lazy" width="440" height="956"><figcaption>Login, user / admin</figcaption></figure>
-        <figure><img src="assets/img/bloomtech/browse.webp" alt="Home screen showing a plant system card" loading="lazy" width="440" height="956"><figcaption>Home</figcaption></figure>
-        <figure><img src="assets/img/bloomtech/home-hero.webp" alt="Tools catalogue" loading="lazy" width="456" height="956"><figcaption>Tools</figcaption></figure>
-        <figure><img src="assets/img/bloomtech/sensor.webp" alt="Sensor dashboard with soil moisture, pH, EC and light rings" loading="lazy" width="440" height="956"><figcaption>Sensor dashboard</figcaption></figure>
-        <figure><img src="assets/img/bloomtech/scan-result.webp" alt="Disease scan result with circled areas on a leaf" loading="lazy" width="440" height="956"><figcaption>Disease scan result</figcaption></figure>
-        <figure><img src="assets/img/bloomtech/notifications.webp" alt="Notifications for water, light and pH alerts" loading="lazy" width="440" height="956"><figcaption>Alerts</figcaption></figure>
-        <figure><img src="assets/img/bloomtech/reference.webp" alt="Reference readings for mint, thyme and basil" loading="lazy" width="440" height="956"><figcaption>Plant reference</figcaption></figure>
-        <figure><img src="assets/img/bloomtech/add-plant.webp" alt="Add plant form with pH, EC and moisture inputs" loading="lazy" width="440" height="956"><figcaption>Add plant</figcaption></figure>
-        <figure><img src="assets/img/bloomtech/admin-home.webp" alt="Admin home with services" loading="lazy" width="440" height="956"><figcaption>Admin home</figcaption></figure>
-        <figure><img src="assets/img/bloomtech/machines.webp" alt="Machines catalogue" loading="lazy" width="440" height="956"><figcaption>Machines</figcaption></figure>
-        <figure><img src="assets/img/bloomtech/profile.webp" alt="Profile screen" loading="lazy" width="440" height="956"><figcaption>Profile</figcaption></figure>
-      </div>
-    </div>
-  </article>
-
-  <!-- Happy Tails -->
-  <article class="case" id="happytails" style="--accent:#1c8f9c; --tint:#dcf1f3;">
-    <div class="case-intro">
-      <span class="case-badge" aria-hidden="true">🐾</span>
-      <div>
-        <h3>Happy Tails</h3>
-        <p class="case-kind">Pet care mobile app & landing page · Route UI/UX Diploma, 2025</p>
-      </div>
-    </div>
-    <div class="case-body">
-      <div class="case-text">
-        <p class="lede">One app for a pet's food, vet visits and vaccination dates, shaped around what owners told me about their daily routines.</p>
-        <dl class="case-meta">
-          <div><dt>Role</dt><dd>UI/UX designer, solo</dd></div>
-          <div><dt>Research</dt><dd>3 interviews, survey of 15 owners</dd></div>
-          <div><dt>Output</dt><dd>18 screens, clickable prototype, landing page</dd></div>
-        </dl>
-        <h4>The problem</h4>
-        <p class="research-note">Owners juggle feeding, vaccines, grooming and vet visits across different apps, forget reminders, and struggle to track several pets at once. No app combined pet shopping, health tracking and service booking.</p>
-        <div class="compare" role="table" aria-label="Competitive analysis">
-          <div class="cmp-row cmp-head" role="row"><span role="columnheader"></span><span role="columnheader">Petco / PetSmart</span><span role="columnheader">Instagram shops</span><span role="columnheader">Vet apps</span><span role="columnheader">Happy Tails</span></div>
-          <div class="cmp-row" role="row"><span role="rowheader">Supplies store</span><i class="y" role="cell">Yes</i><i class="y" role="cell">Yes</i><i class="n" role="cell">No</i><i class="y" role="cell">Yes</i></div>
-          <div class="cmp-row" role="row"><span role="rowheader">Health tracking & reminders</span><i class="n" role="cell">No</i><i class="n" role="cell">No</i><i class="n" role="cell">No</i><i class="y" role="cell">Yes</i></div>
-          <div class="cmp-row" role="row"><span role="rowheader">Vet & grooming booking</span><i class="n" role="cell">Limited</i><i class="n" role="cell">No</i><i class="y" role="cell">Yes</i><i class="y" role="cell">Yes</i></div>
-          <div class="cmp-row" role="row"><span role="rowheader">Multiple pet profiles</span><i class="n" role="cell">No</i><i class="n" role="cell">No</i><i class="n" role="cell">No</i><i class="y" role="cell">Yes</i></div>
+    <div class="fade-up d3 hero-visual" aria-hidden="true">
+      <div class="wall">
+        <div class="col col-a">
+          <div class="track">
+            <img src="assets/img/bloomtech/welcome.webp" alt="" class="t-phone">
+            <img src="assets/img/happytails/home-products.webp" alt="" class="t-board">
+            <img src="assets/img/bloomtech/sensor.webp" alt="" class="t-phone">
+            <img src="assets/img/tmhm/welcome.webp" alt="" class="t-phone">
+            <img src="assets/img/bloomtech/welcome.webp" alt="" class="t-phone">
+            <img src="assets/img/happytails/home-products.webp" alt="" class="t-board">
+            <img src="assets/img/bloomtech/sensor.webp" alt="" class="t-phone">
+            <img src="assets/img/tmhm/welcome.webp" alt="" class="t-phone">
+          </div>
         </div>
-        <p class="cmp-cap">From my competitive analysis in Notion.</p>
-        <h4>How I worked</h4>
-        <ol class="steps">
-          <li><b>Listen.</b> Interviewed 3 pet owners and surveyed 15, then synthesized the findings into personas, empathy maps and affinity maps.</li>
-          <li><b>Decide.</b> Turned the research into three core features: pet profiles, vaccination reminders and pet-supply shopping.</li>
-          <li><b>Map.</b> Built the full user flow in FigJam: onboarding, sign in, sign up or continue as a guest, browse by pet, product, cart, and payment by card, Apple Pay or cash on delivery.</li>
-          <li><b>Design.</b> 18 high-fidelity screens linked into a clickable prototype, plus a marketing landing page.</li>
-        </ol>
+        <div class="col col-b">
+          <div class="track">
+            <img src="assets/img/closet/favorites-product.webp" alt="" class="t-board">
+            <img src="assets/img/bloomtech/browse.webp" alt="" class="t-phone">
+            <img src="assets/img/rsm/app.webp" alt="" class="t-phone">
+            <img src="assets/img/research/persona.webp" alt="" class="t-board">
+            <img src="assets/img/closet/favorites-product.webp" alt="" class="t-board">
+            <img src="assets/img/bloomtech/browse.webp" alt="" class="t-phone">
+            <img src="assets/img/rsm/app.webp" alt="" class="t-phone">
+            <img src="assets/img/research/persona.webp" alt="" class="t-board">
+          </div>
+        </div>
+        <div class="col col-c">
+          <div class="track">
+            <img src="assets/img/bloomtech/scan-result.webp" alt="" class="t-phone">
+            <img src="assets/img/happytails/profile-pets.webp" alt="" class="t-board">
+            <img src="assets/img/tmhm/login.webp" alt="" class="t-phone">
+            <img src="assets/img/bloomtech/notifications.webp" alt="" class="t-phone">
+            <img src="assets/img/bloomtech/scan-result.webp" alt="" class="t-phone">
+            <img src="assets/img/happytails/profile-pets.webp" alt="" class="t-board">
+            <img src="assets/img/tmhm/login.webp" alt="" class="t-phone">
+            <img src="assets/img/bloomtech/notifications.webp" alt="" class="t-phone">
+          </div>
+        </div>
       </div>
-      <div class="boards">
-        <figure class="board board-wide"><img src="assets/img/happytails/cover.webp" alt="Happy Tails cover with app mockups" loading="lazy"><figcaption>Cover</figcaption></figure>
-        <figure class="board"><img src="assets/img/happytails/home-products.webp" alt="Home, product list and product details screens" loading="lazy"><figcaption>Home & shopping</figcaption></figure>
-        <figure class="board"><img src="assets/img/happytails/vets-favorites.webp" alt="Nearby vets, vet info and favorites screens" loading="lazy"><figcaption>Vets & favorites</figcaption></figure>
-        <figure class="board"><img src="assets/img/happytails/profile-pets.webp" alt="Profile, pet details and my pets screens" loading="lazy"><figcaption>Pet profiles & reminders</figcaption></figure>
-        <figure class="board"><img src="assets/img/happytails/onboarding.webp" alt="Onboarding screens with pet photos" loading="lazy"><figcaption>Onboarding</figcaption></figure>
-        <figure class="board board-wide"><img src="assets/img/research/userflow.webp" alt="FigJam user flow from splash screen to order done, with guest and sign-in branches" loading="lazy"><figcaption>User flow in FigJam: guest or account, browse by pet, cart, payment</figcaption></figure>
-        <figure class="board board-wide"><img src="assets/img/happytails/landing.webp" alt="Happy Tails marketing landing page" loading="lazy"><figcaption>Landing page</figcaption></figure>
-      </div>
+      <div class="float-card fc-1"><span class="fc-dot" style="--c:#2bb673"></span>Sensor alert designed<b>pH level is low</b></div>
+      <div class="float-card fc-2"><code>&lt;PlantCard /&gt;</code><b>Figma → Flutter</b></div>
     </div>
-  </article>
+  </div>
+  <a class="scroll-cue" href="#work" aria-label="Scroll to projects"><span></span></a>
+</section>
 
-  <!-- Closet -->
-  <article class="case" id="closet" style="--accent:#7a4e22; --tint:#f1e6da;">
-    <div class="case-intro">
-      <span class="case-badge serif" aria-hidden="true">C</span>
-      <div>
+<!-- tools marquee -->
+<div class="marquee" aria-label="Tools I use">
+  <div class="marquee-track">
+    <span>Figma</span><span>FigJam</span><span>User research</span><span>Prototyping</span><span>Design systems</span><span>Flutter</span><span>HTML · CSS · JS</span><span>Firebase</span><span>Node.js</span><span>MongoDB</span><span>Dev Mode handoff</span><span>Notion</span>
+    <span aria-hidden="true">Figma</span><span aria-hidden="true">FigJam</span><span aria-hidden="true">User research</span><span aria-hidden="true">Prototyping</span><span aria-hidden="true">Design systems</span><span aria-hidden="true">Flutter</span><span aria-hidden="true">HTML · CSS · JS</span><span aria-hidden="true">Firebase</span><span aria-hidden="true">Node.js</span><span aria-hidden="true">MongoDB</span><span aria-hidden="true">Dev Mode handoff</span><span aria-hidden="true">Notion</span>
+  </div>
+</div>
+
+<!-- ============ PROJECTS ============ -->
+<section class="work" id="work" aria-labelledby="work-h">
+  <div class="head reveal">
+    <h2 id="work-h">Selected projects</h2>
+    <p>Each card is a live preview. Open one for the full case study: the problem, the research, the decisions and every screen.</p>
+  </div>
+
+  <div class="grid">
+    <a class="pcard pcard-xl reveal" href="#/work/bloomtech" data-project="bloomtech" style="--accent:#2f7a3d;--tint:#e3efe0;--tint2:#cfe3c9">
+      <div class="pmedia">
+        <div class="device phone">
+          <div class="slides">
+            <img src="assets/img/bloomtech/browse.webp" alt="BloomTech home screen" loading="lazy">
+            <img src="assets/img/bloomtech/sensor.webp" alt="" loading="lazy">
+            <img src="assets/img/bloomtech/scan-result.webp" alt="" loading="lazy">
+            <img src="assets/img/bloomtech/notifications.webp" alt="" loading="lazy">
+          </div>
+        </div>
+        <div class="device phone phone-back">
+          <img src="assets/img/bloomtech/welcome.webp" alt="" loading="lazy">
+        </div>
+        <span class="live-tag">Live demo</span>
+      </div>
+      <div class="pinfo">
+        <div class="ptop"><span class="ptype">Mobile app · IoT · Graduation project</span><span class="pyear">2025</span></div>
+        <h3>BloomTech</h3>
+        <p>Smart agriculture monitoring. 26 screens designed, then built by 2 Flutter developers into a working app on real sensors.</p>
+        <ul class="tags"><li>Sole designer</li><li>Figma</li><li>Flutter handoff</li></ul>
+        <span class="open">Open case study</span>
+      </div>
+    </a>
+
+    <a class="pcard reveal" href="#/work/happytails" data-project="happytails" style="--accent:#14889a;--tint:#dcf2f4;--tint2:#bfe6ea">
+      <div class="pmedia">
+        <div class="device board">
+          <div class="slides">
+            <img src="assets/img/happytails/cover.webp" alt="Happy Tails app screens" loading="lazy">
+            <img src="assets/img/happytails/home-products.webp" alt="" loading="lazy">
+            <img src="assets/img/happytails/profile-pets.webp" alt="" loading="lazy">
+            <img src="assets/img/happytails/landing.webp" alt="" loading="lazy">
+          </div>
+        </div>
+        <span class="live-tag">Live demo</span>
+      </div>
+      <div class="pinfo">
+        <div class="ptop"><span class="ptype">Pet care app & landing page</span><span class="pyear">2025</span></div>
+        <h3>Happy Tails</h3>
+        <p>Shopping, vet booking and vaccination reminders in one app, backed by a competitive analysis and a full user flow.</p>
+        <ul class="tags"><li>Research</li><li>18 screens</li><li>Prototype</li></ul>
+        <span class="open">Open case study</span>
+      </div>
+    </a>
+
+    <a class="pcard reveal" href="#/work/closet" data-project="closet" style="--accent:#8a5626;--tint:#f3e8dc;--tint2:#e8d5c0">
+      <div class="pmedia">
+        <div class="device board">
+          <div class="slides">
+            <img src="assets/img/closet/cover.webp" alt="Closet app screens" loading="lazy">
+            <img src="assets/img/closet/favorites-product.webp" alt="" loading="lazy">
+            <img src="assets/img/closet/cart-checkout.webp" alt="" loading="lazy">
+            <img src="assets/img/research/affinity.webp" alt="" loading="lazy">
+          </div>
+        </div>
+        <span class="live-tag">Live demo</span>
+      </div>
+      <div class="pinfo">
+        <div class="ptop"><span class="ptype">Fashion e-commerce app</span><span class="pyear">2025</span></div>
         <h3>Closet</h3>
-        <p class="case-kind">Fashion e-commerce mobile app · Route UI/UX Diploma, 2025</p>
+        <p>Local and global brands in one shopping app, shaped by user interviews, an affinity map and a journey map.</p>
+        <ul class="tags"><li>Interviews</li><li>Component library</li><li>Checkout flow</li></ul>
+        <span class="open">Open case study</span>
       </div>
-    </div>
-    <div class="case-body">
-      <div class="case-text">
-        <p class="lede">A calm, warm shopping app that takes people from first launch to a placed order in as few decisions as possible.</p>
-        <dl class="case-meta">
-          <div><dt>Role</dt><dd>UI/UX designer, solo</dd></div>
-          <div><dt>Scope</dt><dd>18 screens, onboarding to checkout</dd></div>
-          <div><dt>System</dt><dd>Reusable component library</dd></div>
-        </dl>
-        <h4>What shoppers told me</h4>
-        <p class="research-note">I interviewed two young shoppers with 22 questions each, then mapped what I heard into an empathy map, an affinity map, a persona, a SWOT and a journey map in FigJam.</p>
-        <blockquote class="quote">"Sometimes the quality doesn't match the pictures, or I can't find my size."<cite>Shopper, 20</cite></blockquote>
-        <blockquote class="quote">"Good reviews and real customer feedback" is what makes them trust an app.<cite>Both shoppers</cite></blockquote>
-        <p class="research-note">Three pain points kept coming up:</p>
-        <ul class="pains">
-          <li>Inconsistent sizing</li><li>Poor filtering</li><li>Unrealistic product photos</li>
-        </ul>
-        <p class="research-note">And one need shaped the whole structure: shopping for the whole family in one place, not women-only or kids-only apps.</p>
-        <h4>What I did</h4>
-        <ul class="ticks">
-          <li>Ran a competitive analysis of fashion apps and created proto-personas to define the information architecture for women's, men's and kids' categories.</li>
-          <li>Designed the full journey: onboarding, sign in, browsing, favorites, product details, cart, checkout and order tracking.</li>
-          <li>Put size and color choice right on the product page, and offered cash on delivery at checkout, since both shoppers said they pay cash.</li>
-          <li>Built a component library for product cards, filters and navigation, with shared color and type styles.</li>
-        </ul>
-      </div>
-      <div class="boards">
-        <figure class="board board-wide"><img src="assets/img/closet/cover.webp" alt="Closet cover with app mockups" loading="lazy"><figcaption>Cover</figcaption></figure>
-        <figure class="board"><img src="assets/img/closet/onboarding.webp" alt="Three onboarding screens" loading="lazy"><figcaption>Onboarding</figcaption></figure>
-        <figure class="board"><img src="assets/img/closet/favorites-product.webp" alt="Favorites list and product details" loading="lazy"><figcaption>Favorites & product</figcaption></figure>
-        <figure class="board"><img src="assets/img/closet/cart-checkout.webp" alt="Cart, checkout and order tracking" loading="lazy"><figcaption>Cart, checkout, tracking</figcaption></figure>
-        <figure class="board"><img src="assets/img/closet/auth-profile.webp" alt="Sign up, sign in and profile" loading="lazy"><figcaption>Auth & profile</figcaption></figure>
-      </div>
-    </div>
-    <div class="research" aria-label="Closet research boards from FigJam">
-      <h4>Research boards</h4>
-      <div class="research-grid">
-        <figure><img src="assets/img/research/affinity.webp" alt="Affinity map grouping features, goals, pain points, expectations, categories and community" loading="lazy"><figcaption>Affinity map</figcaption></figure>
-        <figure><img src="assets/img/research/empathy.webp" alt="Empathy map: hears, sees, says and does, thinks and feels" loading="lazy"><figcaption>Empathy map</figcaption></figure>
-        <figure><img src="assets/img/research/persona.webp" alt="Persona Sara Morgan, 27, digital marketing specialist" loading="lazy"><figcaption>Persona: Sara, 27, shops weekly for herself and her family</figcaption></figure>
-        <figure><img src="assets/img/research/swot.webp" alt="SWOT analysis for Closet" loading="lazy"><figcaption>SWOT analysis</figcaption></figure>
-        <figure class="wide"><img src="assets/img/research/journey.webp" alt="User journey map from awareness to loyalty with opportunities" loading="lazy"><figcaption>Journey map, awareness to loyalty</figcaption></figure>
-      </div>
-    </div>
-  </article>
+    </a>
 
-  <!-- TMHM -->
-  <article class="case" id="tmhm" style="--accent:#4a4fd1; --tint:#e5e6fb;">
-    <div class="case-intro">
-      <span class="case-badge" aria-hidden="true">T</span>
-      <div>
+    <a class="pcard reveal" href="#/work/tmhm" data-project="tmhm" style="--accent:#4b46c8;--tint:#e6e5fb;--tint2:#d2d0f6">
+      <div class="pmedia">
+        <div class="device phone">
+          <div class="slides">
+            <img src="assets/img/tmhm/welcome.webp" alt="TMHM welcome screen" loading="lazy">
+            <img src="assets/img/tmhm/login.webp" alt="" loading="lazy">
+            <img src="assets/img/tmhm/signup.webp" alt="" loading="lazy">
+            <img src="assets/img/tmhm/suggestions.webp" alt="" loading="lazy">
+          </div>
+        </div>
+        <span class="live-tag">Live demo</span>
+      </div>
+      <div class="pinfo">
+        <div class="ptop"><span class="ptype">Courses & jobs app</span><span class="pyear">2023</span></div>
         <h3>TMHM</h3>
-        <p class="case-kind">Courses & jobs mobile app · University project, 2023</p>
+        <p>"Teach me, Hire me": designed all 15 screens, then co-built the app in Flutter and Firebase.</p>
+        <ul class="tags"><li>Design + code</li><li>Flutter</li><li>Firebase</li></ul>
+        <span class="open">Open case study</span>
       </div>
+    </a>
+
+    <a class="pcard reveal" href="#/work/rsm" data-project="rsm" style="--accent:#c8361f;--tint:#fbe4df;--tint2:#f6cdc4">
+      <div class="pmedia">
+        <div class="device phone">
+          <div class="slides">
+            <img src="assets/img/rsm/robot.webp" alt="Red Soil Monster robot" loading="lazy">
+            <img src="assets/img/rsm/app.webp" alt="" loading="lazy">
+            <img src="assets/img/rsm/robot-build.webp" alt="" loading="lazy">
+          </div>
+        </div>
+        <span class="live-tag">Live demo</span>
+      </div>
+      <div class="pinfo">
+        <div class="ptop"><span class="ptype">Robotics · IoT · Team project</span><span class="pyear">2024</span></div>
+        <h3>Red Soil Monster</h3>
+        <p>An automated irrigation robot that waters plants when soil moisture drops, with a mobile app for remote control.</p>
+        <ul class="tags"><li>ESP32</li><li>Sensors</li><li>Mobile app</li></ul>
+        <span class="open">Open case study</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about" aria-labelledby="about-h">
+  <div class="about-grid">
+    <div class="about-copy reveal">
+      <h2 id="about-h">A designer who can read the code</h2>
+      <p>I graduated in Computer Science & Artificial Intelligence from Pharos University in Alexandria with a 3.73 CGPA, then completed Route's UI/UX Design Diploma. I start with people: interviews, surveys, affinity and empathy maps. Then I structure flows, design high-fidelity screens from a component library, and hand developers files they can build.</p>
+      <p>Because I've built front ends and back ends myself, my designs come with real states, consistent spacing and components that map to code. My goal: grow as a UI/UX designer on a product team, and keep sharpening my front-end skills alongside it.</p>
     </div>
-    <div class="case-body">
-      <div class="case-text">
-        <p class="lede">"Teach me, Hire me": one app where workers find courses and jobs, and companies find people to hire. I was the team's only designer, then helped build it.</p>
-        <dl class="case-meta">
-          <div><dt>Role</dt><dd>UI designer & Flutter developer, team of 3</dd></div>
-          <div><dt>Scope</dt><dd>15 screens</dd></div>
-          <div><dt>Built with</dt><dd>Figma, Flutter, Firebase</dd></div>
-        </dl>
-        <ul class="ticks">
-          <li>Designed all 15 screens, then co-developed the app in Flutter and Firebase, including course and job search filters and user profiles.</li>
-          <li>Split the experience at the first screen into two paths, worker and company, so each side only sees what it needs.</li>
-          <li>Explored two visual directions in Figma: a dark gradient theme and a lighter blue one.</li>
+    <ul class="pillars reveal">
+      <li><span class="pi" aria-hidden="true">01</span><div><h3>Research first</h3><p>Interviews, surveys and competitive analysis before any pixel.</p></div></li>
+      <li><span class="pi" aria-hidden="true">02</span><div><h3>Systems, not screens</h3><p>Auto Layout, components and variants that scale across flows.</p></div></li>
+      <li><span class="pi" aria-hidden="true">03</span><div><h3>Built to ship</h3><p>Dev Mode-ready handoff, and hands-on Flutter, HTML, CSS and JavaScript.</p></div></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="process" aria-labelledby="process-h">
+  <div class="head reveal">
+    <h2 id="process-h">How I work</h2>
+    <p>The same path on every project, scaled to its size.</p>
+  </div>
+  <ol class="flow reveal">
+    <li><span class="fnum">1</span><h3>Research</h3><p>Interviews, surveys, competitive analysis.</p></li>
+    <li><span class="fnum">2</span><h3>Synthesize</h3><p>Personas, empathy and affinity maps, journey maps.</p></li>
+    <li><span class="fnum">3</span><h3>Structure</h3><p>Information architecture and user flows.</p></li>
+    <li><span class="fnum">4</span><h3>Design</h3><p>High-fidelity UI and clickable prototypes.</p></li>
+    <li><span class="fnum">5</span><h3>Hand off</h3><p>Dev Mode specs, and help building it.</p></li>
+  </ol>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="skills" id="skills" aria-labelledby="skills-h">
+  <div class="head reveal">
+    <h2 id="skills-h">Skills & tools</h2>
+  </div>
+  <div class="skill-grid">
+    <div class="skill reveal"><h3>UX research</h3><ul><li>User interviews</li><li>Surveys</li><li>Competitive analysis</li><li>Personas</li><li>Empathy mapping</li><li>Affinity mapping</li><li>Journey mapping</li><li>SWOT</li></ul></div>
+    <div class="skill reveal"><h3>Structure</h3><ul><li>User-centered design</li><li>Information architecture</li><li>User flows</li></ul></div>
+    <div class="skill reveal"><h3>UI design</h3><ul><li>Visual design</li><li>Interaction design</li><li>Interactive prototyping</li><li>Mobile app design</li><li>Dashboard design</li><li>Responsive design</li></ul></div>
+    <div class="skill reveal"><h3>Systems & handoff</h3><ul><li>Component libraries</li><li>Components & variants</li><li>Auto Layout</li><li>Dev Mode</li><li>Developer handoff</li></ul></div>
+    <div class="skill reveal"><h3>Tools</h3><ul><li>Figma</li><li>FigJam</li><li>Notion</li><li>Canva</li><li>Trello</li></ul></div>
+    <div class="skill reveal"><h3>Code</h3><ul><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Flutter</li><li>Firebase</li><li>Node.js</li><li>Express</li><li>MongoDB</li></ul></div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="experience" id="experience" aria-labelledby="exp-h">
+  <div class="head reveal">
+    <h2 id="exp-h">Experience & education</h2>
+    <a class="btn btn-line" href="assets/Rewan_Ibrahim_CV.pdf" download>Download full CV (PDF)</a>
+  </div>
+  <div class="exp-grid">
+    <ol class="timeline">
+      <li class="reveal"><time>Feb 2026 – Sep 2026</time><div><h3>Teaching Assistant</h3><p class="org">Faculty of Computer Science & AI, Pharos University in Alexandria</p><p>Ran programming, algorithm design and software quality assurance labs for up to 30 students, explaining concepts and grading assignments and projects.</p></div></li>
+      <li class="reveal"><time>Aug 2025</time><div><h3>Freelance UI/UX Designer & Developer</h3><p class="org">Ora Design · online custom event-print business · remote</p><p>Studied the owner's Excel workflow for orders, products and accounting, then designed and built a web dashboard around it in 3 weeks (HTML, CSS, JavaScript, Node.js, MongoDB), replacing her spreadsheets.</p></div></li>
+      <li class="reveal"><time>Jul 2024 – Sep 2024</time><div><h3>Back-End Developer Intern</h3><p class="org">Route Training, Alexandria</p><p>Built an e-commerce backend with Node.js, Express.js and MongoDB, including product routes and authentication.</p></div></li>
+      <li class="reveal"><time>Jul 2023 – Oct 2023</time><div><h3>Front-End Developer Intern</h3><p class="org">AMIT Learning, Alexandria</p><p>Built a responsive portfolio website in HTML, CSS and JavaScript, focusing on layout and user interaction.</p></div></li>
+    </ol>
+    <aside class="edu">
+      <div class="edu-card reveal">
+        <span class="edu-kind">Degree</span>
+        <h3>B.Sc. Computer Science & Artificial Intelligence</h3>
+        <p>Pharos University in Alexandria</p>
+        <p class="edu-meta">Sep 2021 – Sep 2025 · CGPA 3.73 / 4.0</p>
+      </div>
+      <div class="edu-card reveal">
+        <span class="edu-kind">Diploma</span>
+        <h3>UI/UX Design Diploma</h3>
+        <p>Route Training, Alexandria</p>
+        <p class="edu-meta">Oct 2025 – Dec 2025 · Happy Tails & Closet</p>
+      </div>
+      <div class="edu-card reveal">
+        <span class="edu-kind">Languages</span>
+        <ul class="langs">
+          <li><span>Arabic</span><span class="bar"><i style="--w:100%"></i></span><small>Native</small></li>
+          <li><span>English</span><span class="bar"><i style="--w:70%"></i></span><small>Upper intermediate (B2)</small></li>
         </ul>
       </div>
-      <div class="strip" tabindex="0" aria-label="TMHM screens, scroll horizontally">
-        <figure><img src="assets/img/tmhm/welcome.webp" alt="Welcome screen with worker and company buttons" loading="lazy" width="430" height="932"><figcaption>Welcome: worker or company</figcaption></figure>
-        <figure><img src="assets/img/tmhm/login.webp" alt="Login screen" loading="lazy" width="430" height="932"><figcaption>Login</figcaption></figure>
-        <figure><img src="assets/img/tmhm/signup.webp" alt="Create account screen" loading="lazy" width="430" height="932"><figcaption>Create account</figcaption></figure>
-        <figure><img src="assets/img/tmhm/suggestions.webp" alt="Suggested employees list for companies" loading="lazy" width="430" height="932"><figcaption>Suggested employees</figcaption></figure>
-      </div>
-    </div>
-    <div class="research">
-      <div class="research-grid">
-        <figure><img src="assets/img/tmhm/v1-row.webp" alt="First direction: dark gradient welcome, login and sign-up" loading="lazy"><figcaption>Direction 1: dark gradient</figcaption></figure>
-        <figure><img src="assets/img/tmhm/v2-row.webp" alt="Second direction: light blue welcome, login, sign-up, phone verification and plan choice" loading="lazy"><figcaption>Direction 2: light blue, with phone verification and a courses-or-jobs choice</figcaption></figure>
-      </div>
-    </div>
-  </article>
-</section>
-
-<!-- DESIGN TO CODE -->
-<section class="handoff" aria-labelledby="handoff-h">
-  <div class="handoff-copy">
-    <h2 id="handoff-h">Designs that survive the handoff</h2>
-    <p>I studied Computer Science & AI and have shipped front-end and back-end code, so I design with the build in mind: real components, consistent spacing, states for every screen, and Dev Mode-ready files.</p>
-    <p>At Ora Design, a small online event-print business, I studied how the owner ran orders, products and accounting in Excel, then designed and built a web dashboard around that workflow in 3 weeks. It replaced the spreadsheets she used to manage her orders.</p>
-  </div>
-  <div class="stack-card">
-    <div class="stack-row"><span>Design</span><p>Figma · Auto Layout · Variants · Prototyping · Dev Mode · FigJam</p></div>
-    <div class="stack-row"><span>Front end</span><p>HTML · CSS · JavaScript · Flutter</p></div>
-    <div class="stack-row"><span>Back end</span><p>Node.js · Express · MongoDB · Firebase</p></div>
+    </aside>
   </div>
 </section>
 
-<!-- PROCESS -->
-<section class="process" id="process" aria-labelledby="process-h">
-  <div class="section-head">
-    <h2 id="process-h">How a project moves</h2>
-    <p>The same path every time, scaled to the project.</p>
-  </div>
-  <ol class="flow">
-    <li><h3>Research</h3><p>Interviews, surveys and competitive analysis to find what people actually struggle with.</p></li>
-    <li><h3>Synthesize</h3><p>Personas, empathy and affinity maps that turn notes into decisions.</p></li>
-    <li><h3>Structure</h3><p>Information architecture and user flows before any pixels.</p></li>
-    <li><h3>Design</h3><p>High-fidelity screens built from a component library, linked into a prototype.</p></li>
-    <li><h3>Hand off</h3><p>Dev Mode-ready files, and a designer who can read the code.</p></li>
-  </ol>
-</section>
-
-<!-- TOOLKIT -->
-<section class="toolkit" id="toolkit" aria-labelledby="toolkit-h">
-  <div class="section-head">
-    <h2 id="toolkit-h">Toolkit</h2>
-  </div>
-  <div class="layers" role="list">
-    <div class="layer" role="listitem"><h3>Research</h3><p>User interviews, surveys, competitive analysis, personas, empathy mapping, affinity mapping</p></div>
-    <div class="layer" role="listitem"><h3>Structure</h3><p>Information architecture, user flows, user-centered design</p></div>
-    <div class="layer" role="listitem"><h3>Interface</h3><p>UI & visual design, interaction design, mobile app design, dashboard design, responsive design</p></div>
-    <div class="layer" role="listitem"><h3>Systems</h3><p>Component libraries, variants, shared color & type styles, developer handoff</p></div>
-    <div class="layer" role="listitem"><h3>Tools</h3><p>Figma, FigJam, Canva, Trello</p></div>
-    <div class="layer" role="listitem"><h3>Code</h3><p>HTML, CSS, JavaScript, Flutter, Firebase, Node.js, MongoDB</p></div>
-  </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section class="experience" id="experience" aria-labelledby="exp-h">
-  <div class="section-head">
-    <h2 id="exp-h">Experience</h2>
-  </div>
-  <ol class="timeline">
-    <li><time>Feb – Sep 2026</time><div><h3>Teaching Assistant</h3><p class="org">Faculty of Computer Science & AI, Pharos University in Alexandria</p><p>Ran programming, algorithm design and software quality assurance labs for up to 30 students.</p></div></li>
-    <li><time>Oct – Dec 2025</time><div><h3>UI/UX Design Diploma</h3><p class="org">Route Training, Alexandria</p><p>Happy Tails and Closet were designed here.</p></div></li>
-    <li><time>Aug 2025</time><div><h3>Freelance UI/UX Designer & Developer</h3><p class="org">Ora Design, remote</p><p>Designed and built an order-management dashboard that replaced the owner's spreadsheets.</p></div></li>
-    <li><time>2021 – 2025</time><div><h3>B.Sc. Computer Science & Artificial Intelligence</h3><p class="org">Pharos University in Alexandria · CGPA 3.73 / 4.0</p></div></li>
-    <li><time>Jul – Sep 2024</time><div><h3>Back-End Developer Intern</h3><p class="org">Route Training, Alexandria</p><p>E-commerce backend in Node.js, Express and MongoDB.</p></div></li>
-    <li><time>Jul – Oct 2023</time><div><h3>Front-End Developer Intern</h3><p class="org">AMIT Learning, Alexandria</p><p>Responsive website in HTML, CSS and JavaScript.</p></div></li>
-  </ol>
-  <div class="side-project">
-    <img src="assets/img/misc/rsm.webp" alt="" loading="lazy" width="200" height="150" onerror="this.remove()">
-    <div>
-      <h3>Also built: Red Soil Monster</h3>
-      <p>A team robotics project: an automated irrigation and soil-monitoring system that waters plants when moisture drops below a threshold, with a mobile app for remote monitoring.</p>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
+<!-- ============ CONTACT ============ -->
 <section class="contact" id="contact" aria-labelledby="contact-h">
-  <h2 id="contact-h">Let's design something people can use.</h2>
-  <p>Open to junior UI/UX and front-end roles, remote or in Alexandria. Arabic native, English B2.</p>
-  <div class="contact-links">
-    <a class="btn btn-light" href="mailto:irewan28@gmail.com">irewan28@gmail.com</a>
-    <a class="btn btn-ghost" href="https://www.linkedin.com/in/rewan-ibrahim-762911322" target="_blank" rel="noopener">LinkedIn</a>
-    <a class="btn btn-ghost" href="https://www.behance.net/rewanibrahem1" target="_blank" rel="noopener">Behance</a>
+  <div class="contact-inner reveal">
+    <p class="status status-dark"><span class="pulse" aria-hidden="true"></span>Available now · Alexandria or remote</p>
+    <h2 id="contact-h">Let's design something people actually enjoy using.</h2>
+    <div class="contact-links">
+      <a class="btn btn-brand" href="mailto:irewan28@gmail.com">irewan28@gmail.com</a>
+      <a class="btn btn-ghost-light" href="https://www.linkedin.com/in/rewan-ibrahim-762911322" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn btn-ghost-light" href="https://www.behance.net/rewanibrahem1" target="_blank" rel="noopener">Behance</a>
+      <a class="btn btn-ghost-light" href="assets/Rewan_Ibrahim_CV.pdf" download>CV (PDF)</a>
+    </div>
   </div>
-  <p class="foot">Designed in Figma, hand-coded in HTML, CSS and JavaScript. © 2026 Rewan Ibrahim</p>
+  <footer class="foot">
+    <span>© 2026 Rewan Ibrahim</span>
+    <span>Designed in Figma, hand-coded in HTML, CSS and JavaScript.</span>
+  </footer>
 </section>
 </main>
 
-<dialog class="lightbox" id="lightbox" aria-label="Screen preview">
+<!-- ============ CASE STUDY SHEET ============ -->
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" hidden>
+  <div class="sheet-backdrop" data-close></div>
+  <article class="sheet-panel" tabindex="-1">
+    <div class="sheet-bar">
+      <button class="sheet-btn" type="button" data-close aria-label="Close case study">← Back to projects</button>
+      <div class="sheet-nav">
+        <button class="sheet-btn" type="button" data-step="-1" aria-label="Previous project">Prev</button>
+        <button class="sheet-btn" type="button" data-step="1" aria-label="Next project">Next</button>
+      </div>
+    </div>
+    <div class="sheet-body" id="sheet-body"></div>
+  </article>
+</div>
+
+<!-- Lightbox -->
+<dialog class="lightbox" id="lightbox" aria-label="Image preview">
   <button class="lb-close" type="button" aria-label="Close preview">×</button>
-  <button class="lb-nav lb-prev" type="button" aria-label="Previous screen">‹</button>
+  <button class="lb-nav lb-prev" type="button" aria-label="Previous image">‹</button>
   <figure><img alt=""><figcaption></figcaption></figure>
-  <button class="lb-nav lb-next" type="button" aria-label="Next screen">›</button>
+  <button class="lb-nav lb-next" type="button" aria-label="Next image">›</button>
 </dialog>
+
+<!-- ============ CASE STUDY CONTENT ============ -->
+<template id="case-bloomtech">
+  <div class="cs" style="--accent:#2f7a3d;--tint:#e3efe0">
+    <header class="cs-hero">
+      <div class="cs-hero-copy">
+        <img class="cs-logo" src="assets/img/bloomtech/logo.webp" alt="BloomTech logo">
+        <p class="cs-kind">Smart agriculture monitoring app · Graduation project, 2025</p>
+        <h2 id="sheet-title">BloomTech</h2>
+        <p class="cs-lede">A B2B app that helps agricultural companies watch large farms and gardens through IoT sensors, so non-technical staff can see what needs attention without reading raw data.</p>
+      </div>
+      <div class="cs-hero-media phones3">
+        <img src="assets/img/bloomtech/welcome.webp" alt="">
+        <img src="assets/img/bloomtech/browse.webp" alt="">
+        <img src="assets/img/bloomtech/sensor.webp" alt="">
+      </div>
+    </header>
+    <dl class="cs-meta">
+      <div><dt>Role</dt><dd>Sole UI/UX designer, team of 6</dd></div>
+      <div><dt>Scope</dt><dd>26 screens, user & admin flows</dd></div>
+      <div><dt>Tools</dt><dd>Figma, Flutter, Firebase</dd></div>
+      <div><dt>Outcome</dt><dd>Built and connected to real sensors</dd></div>
+    </dl>
+    <section class="cs-sec">
+      <h3>The challenge</h3>
+      <p>Farm staff need to know when a plant needs water, light or a pH fix, but raw sensor numbers mean little to someone who isn't technical. The app had to turn readings into clear status and alerts, and support both users and admins.</p>
+    </section>
+    <section class="cs-sec">
+      <h3>What I did</h3>
+      <ul class="ticks">
+        <li>Owned the end-to-end UI/UX: onboarding, user and admin registration, home, plant management, profile, notifications and settings.</li>
+        <li>Designed a real-time sensor dashboard for soil moisture, pH, EC and light, with ring gauges and alerts that flag readings needing action.</li>
+        <li>Designed a scan flow that circles diseased areas on a leaf photo and explains how to treat them.</li>
+        <li>Handed off Figma files to 2 Flutter developers, who built a working app connected to real hardware.</li>
+      </ul>
+    </section>
+    <section class="cs-sec">
+      <h3>Screens</h3>
+      <div class="strip" tabindex="0" aria-label="BloomTech screens, scroll horizontally">
+        <figure><img src="assets/img/bloomtech/welcome.webp" alt="Welcome screen" loading="lazy"><figcaption>Welcome</figcaption></figure>
+        <figure><img src="assets/img/bloomtech/login.webp" alt="Login with user and admin toggle" loading="lazy"><figcaption>Login, user / admin</figcaption></figure>
+        <figure><img src="assets/img/bloomtech/browse.webp" alt="Home with plant system card" loading="lazy"><figcaption>Home</figcaption></figure>
+        <figure><img src="assets/img/bloomtech/sensor.webp" alt="Sensor dashboard" loading="lazy"><figcaption>Sensor dashboard</figcaption></figure>
+        <figure><img src="assets/img/bloomtech/scan.webp" alt="Leaf scan" loading="lazy"><figcaption>Scan a leaf</figcaption></figure>
+        <figure><img src="assets/img/bloomtech/scan-result.webp" alt="Disease scan result" loading="lazy"><figcaption>Disease result</figcaption></figure>
+        <figure><img src="assets/img/bloomtech/notifications.webp" alt="Alerts" loading="lazy"><figcaption>Alerts</figcaption></figure>
+        <figure><img src="assets/img/bloomtech/reference.webp" alt="Plant reference readings" loading="lazy"><figcaption>Plant reference</figcaption></figure>
+        <figure><img src="assets/img/bloomtech/add-plant.webp" alt="Add plant form" loading="lazy"><figcaption>Add plant</figcaption></figure>
+        <figure><img src="assets/img/bloomtech/my-plants.webp" alt="My plants" loading="lazy"><figcaption>My plants</figcaption></figure>
+        <figure><img src="assets/img/bloomtech/admin-home.webp" alt="Admin home" loading="lazy"><figcaption>Admin home</figcaption></figure>
+        <figure><img src="assets/img/bloomtech/home-hero.webp" alt="Tools catalogue" loading="lazy"><figcaption>Tools</figcaption></figure>
+        <figure><img src="assets/img/bloomtech/machines.webp" alt="Machines catalogue" loading="lazy"><figcaption>Machines</figcaption></figure>
+        <figure><img src="assets/img/bloomtech/profile.webp" alt="Profile" loading="lazy"><figcaption>Profile</figcaption></figure>
+        <figure><img src="assets/img/bloomtech/settings.webp" alt="Settings" loading="lazy"><figcaption>Settings</figcaption></figure>
+      </div>
+      <p class="hint">Drag or scroll sideways · click a screen to enlarge</p>
+    </section>
+  </div>
+</template>
+
+<template id="case-happytails">
+  <div class="cs" style="--accent:#14889a;--tint:#dcf2f4">
+    <header class="cs-hero">
+      <div class="cs-hero-copy">
+        <p class="cs-kind">Pet care mobile app & landing page · Route UI/UX Diploma, 2025</p>
+        <h2 id="sheet-title">Happy Tails</h2>
+        <p class="cs-lede">Your pet's health, happiness and daily needs in one app: shop supplies, book vets and groomers, and get reminders for feeding and vaccinations.</p>
+      </div>
+      <div class="cs-hero-media"><img src="assets/img/happytails/cover.webp" alt="Happy Tails app mockups"></div>
+    </header>
+    <dl class="cs-meta">
+      <div><dt>Role</dt><dd>UI/UX designer, solo</dd></div>
+      <div><dt>Research</dt><dd>3 interviews, survey of 15 owners</dd></div>
+      <div><dt>Output</dt><dd>18 screens, prototype, landing page</dd></div>
+      <div><dt>Tools</dt><dd>Figma, FigJam, Notion</dd></div>
+    </dl>
+    <section class="cs-sec">
+      <h3>The problem</h3>
+      <p>Owners juggle feeding, vaccines, grooming and vet visits across different apps, forget reminders, and struggle to track several pets at once. No app combined pet shopping, health tracking and service booking.</p>
+      <div class="compare" role="table" aria-label="Competitive analysis">
+        <div class="cmp-row cmp-head" role="row"><span role="columnheader">Feature</span><span role="columnheader">Petco / PetSmart</span><span role="columnheader">Instagram shops</span><span role="columnheader">Vet apps</span><span role="columnheader">Happy Tails</span></div>
+        <div class="cmp-row" role="row"><span role="rowheader">Supplies store</span><i class="y" role="cell">Yes</i><i class="y" role="cell">Yes</i><i class="n" role="cell">No</i><i class="y" role="cell">Yes</i></div>
+        <div class="cmp-row" role="row"><span role="rowheader">Health tracking & reminders</span><i class="n" role="cell">No</i><i class="n" role="cell">No</i><i class="n" role="cell">No</i><i class="y" role="cell">Yes</i></div>
+        <div class="cmp-row" role="row"><span role="rowheader">Vet & grooming booking</span><i class="n" role="cell">Limited</i><i class="n" role="cell">No</i><i class="y" role="cell">Yes</i><i class="y" role="cell">Yes</i></div>
+        <div class="cmp-row" role="row"><span role="rowheader">Multiple pet profiles</span><i class="n" role="cell">No</i><i class="n" role="cell">No</i><i class="n" role="cell">No</i><i class="y" role="cell">Yes</i></div>
+      </div>
+      <p class="cap">From my competitive analysis.</p>
+    </section>
+    <section class="cs-sec">
+      <h3>How I worked</h3>
+      <ol class="steps">
+        <li><b>Listen.</b> Interviewed 3 pet owners and surveyed 15, then synthesized the findings into personas, empathy maps and affinity maps.</li>
+        <li><b>Decide.</b> Turned the research into three core features: pet profiles, vaccination reminders and pet-supply shopping.</li>
+        <li><b>Map.</b> Built the full user flow in FigJam: onboarding, sign in, sign up or continue as a guest, browse by pet, product, cart, and payment by card, Apple Pay or cash on delivery.</li>
+        <li><b>Design.</b> 18 high-fidelity screens linked into a clickable prototype, plus a marketing landing page.</li>
+      </ol>
+      <figure class="wide-fig"><img src="assets/img/research/userflow.webp" alt="FigJam user flow" loading="lazy"><figcaption>User flow in FigJam</figcaption></figure>
+    </section>
+    <section class="cs-sec">
+      <h3>Screens</h3>
+      <div class="boards">
+        <figure><img src="assets/img/happytails/onboarding.webp" alt="Onboarding" loading="lazy"><figcaption>Onboarding</figcaption></figure>
+        <figure><img src="assets/img/happytails/auth.webp" alt="Login and sign up" loading="lazy"><figcaption>Authentication</figcaption></figure>
+        <figure><img src="assets/img/happytails/home-products.webp" alt="Home and shopping" loading="lazy"><figcaption>Home & shopping</figcaption></figure>
+        <figure><img src="assets/img/happytails/vets-favorites.webp" alt="Vets and favorites" loading="lazy"><figcaption>Nearby vets & favorites</figcaption></figure>
+        <figure><img src="assets/img/happytails/profile-pets.webp" alt="Profile and pets" loading="lazy"><figcaption>Pet profiles & reminders</figcaption></figure>
+        <figure><img src="assets/img/happytails/forgot.webp" alt="Forgot password flow" loading="lazy"><figcaption>Forgot password flow</figcaption></figure>
+        <figure class="span2"><img src="assets/img/happytails/landing.webp" alt="Landing page" loading="lazy"><figcaption>Marketing landing page</figcaption></figure>
+      </div>
+    </section>
+  </div>
+</template>
+
+<template id="case-closet">
+  <div class="cs" style="--accent:#8a5626;--tint:#f3e8dc">
+    <header class="cs-hero">
+      <div class="cs-hero-copy">
+        <p class="cs-kind">Fashion e-commerce mobile app · Route UI/UX Diploma, 2025</p>
+        <h2 id="sheet-title">Closet</h2>
+        <p class="cs-lede">One app that brings local and international clothing brands together, so people can browse, compare and buy without switching between stores.</p>
+      </div>
+      <div class="cs-hero-media"><img src="assets/img/closet/cover.webp" alt="Closet app mockups"></div>
+    </header>
+    <dl class="cs-meta">
+      <div><dt>Role</dt><dd>UI/UX designer, solo</dd></div>
+      <div><dt>Research</dt><dd>2 interviews, 22 questions each</dd></div>
+      <div><dt>Scope</dt><dd>18 screens, onboarding to checkout</dd></div>
+      <div><dt>System</dt><dd>Reusable component library</dd></div>
+    </dl>
+    <section class="cs-sec">
+      <h3>The problem</h3>
+      <p>Shoppers waste time hopping between sites to find clothes that fit their style and budget. Local brands get little visibility next to global ones, and there's no single place to compare prices, styles and collections.</p>
+    </section>
+    <section class="cs-sec">
+      <h3>What shoppers told me</h3>
+      <div class="quotes">
+        <blockquote class="quote">"Sometimes the quality doesn't match the pictures, or I can't find my size."<cite>Shopper, 20</cite></blockquote>
+        <blockquote class="quote">Good reviews and real customer feedback are what make them trust an app.<cite>Both shoppers</cite></blockquote>
+      </div>
+      <p>Three pain points kept coming up:</p>
+      <ul class="pains"><li>Inconsistent sizing</li><li>Poor filtering</li><li>Unrealistic product photos</li></ul>
+      <p>And one need shaped the whole structure: shopping for the whole family in one place, not women-only or kids-only apps.</p>
+    </section>
+    <section class="cs-sec">
+      <h3>What I did</h3>
+      <ul class="ticks">
+        <li>Ran a competitive analysis and created proto-personas to define the information architecture for women's, men's and kids' categories.</li>
+        <li>Designed the full journey: onboarding, sign in, browsing, favorites, product details, cart, checkout and order tracking.</li>
+        <li>Put size and color choice right on the product page, and offered cash on delivery at checkout, since both shoppers said they pay cash.</li>
+        <li>Built a component library for product cards, filters and navigation, with shared color and type styles.</li>
+      </ul>
+    </section>
+    <section class="cs-sec">
+      <h3>Research boards</h3>
+      <div class="boards">
+        <figure><img src="assets/img/research/affinity.webp" alt="Affinity map" loading="lazy"><figcaption>Affinity map</figcaption></figure>
+        <figure><img src="assets/img/research/empathy.webp" alt="Empathy map" loading="lazy"><figcaption>Empathy map</figcaption></figure>
+        <figure><img src="assets/img/research/persona.webp" alt="Persona Sara Morgan" loading="lazy"><figcaption>Persona: Sara, 27, shops weekly for her family</figcaption></figure>
+        <figure><img src="assets/img/research/swot.webp" alt="SWOT analysis" loading="lazy"><figcaption>SWOT analysis</figcaption></figure>
+        <figure class="span2"><img src="assets/img/research/journey.webp" alt="Journey map" loading="lazy"><figcaption>Journey map, awareness to loyalty</figcaption></figure>
+      </div>
+    </section>
+    <section class="cs-sec">
+      <h3>Screens</h3>
+      <div class="boards">
+        <figure><img src="assets/img/closet/onboarding.webp" alt="Onboarding" loading="lazy"><figcaption>Onboarding</figcaption></figure>
+        <figure><img src="assets/img/closet/auth-profile.webp" alt="Auth and profile" loading="lazy"><figcaption>Auth & profile</figcaption></figure>
+        <figure><img src="assets/img/closet/favorites-product.webp" alt="Favorites and product" loading="lazy"><figcaption>Favorites & product details</figcaption></figure>
+        <figure><img src="assets/img/closet/cart-checkout.webp" alt="Cart and checkout" loading="lazy"><figcaption>Cart, checkout, tracking</figcaption></figure>
+        <figure><img src="assets/img/closet/forgot.webp" alt="Forgot password" loading="lazy"><figcaption>Forgot password flow</figcaption></figure>
+        <figure><img src="assets/img/closet/splash.webp" alt="Splash" loading="lazy"><figcaption>Splash screen</figcaption></figure>
+      </div>
+    </section>
+  </div>
+</template>
+
+<template id="case-tmhm">
+  <div class="cs" style="--accent:#4b46c8;--tint:#e6e5fb">
+    <header class="cs-hero">
+      <div class="cs-hero-copy">
+        <p class="cs-kind">Courses & jobs mobile app · University project, 2023</p>
+        <h2 id="sheet-title">TMHM</h2>
+        <p class="cs-lede">"Teach me, Hire me": workers find courses and jobs, and companies find people to hire, in one app. I was the team's only designer, then helped build it.</p>
+      </div>
+      <div class="cs-hero-media phones3">
+        <img src="assets/img/tmhm/welcome.webp" alt="">
+        <img src="assets/img/tmhm/login.webp" alt="">
+        <img src="assets/img/tmhm/suggestions.webp" alt="">
+      </div>
+    </header>
+    <dl class="cs-meta">
+      <div><dt>Role</dt><dd>UI designer & Flutter developer</dd></div>
+      <div><dt>Team</dt><dd>3 people</dd></div>
+      <div><dt>Scope</dt><dd>15 screens</dd></div>
+      <div><dt>Stack</dt><dd>Figma, Flutter, Firebase</dd></div>
+    </dl>
+    <section class="cs-sec">
+      <h3>What I did</h3>
+      <ul class="ticks">
+        <li>Designed all 15 screens as the team's only designer, then co-developed the app in Flutter and Firebase, including course and job search filters and user profiles.</li>
+        <li>Split the experience at the first screen into two paths, worker and company, so each side only sees what it needs.</li>
+        <li>Explored two visual directions in Figma: a dark gradient theme and a lighter blue one with phone verification and a courses-or-jobs choice.</li>
+      </ul>
+    </section>
+    <section class="cs-sec">
+      <h3>Screens</h3>
+      <div class="strip" tabindex="0" aria-label="TMHM screens">
+        <figure><img src="assets/img/tmhm/welcome.webp" alt="Welcome" loading="lazy"><figcaption>Welcome: worker or company</figcaption></figure>
+        <figure><img src="assets/img/tmhm/login.webp" alt="Login" loading="lazy"><figcaption>Login</figcaption></figure>
+        <figure><img src="assets/img/tmhm/signup.webp" alt="Create account" loading="lazy"><figcaption>Create account</figcaption></figure>
+        <figure><img src="assets/img/tmhm/suggestions.webp" alt="Suggested employees" loading="lazy"><figcaption>Suggested employees</figcaption></figure>
+      </div>
+    </section>
+    <section class="cs-sec">
+      <h3>Two directions</h3>
+      <div class="boards">
+        <figure><img src="assets/img/tmhm/v1-row.webp" alt="Dark gradient direction" loading="lazy"><figcaption>Direction 1: dark gradient</figcaption></figure>
+        <figure><img src="assets/img/tmhm/v2-row.webp" alt="Light blue direction" loading="lazy"><figcaption>Direction 2: light blue</figcaption></figure>
+      </div>
+    </section>
+  </div>
+</template>
+
+<template id="case-rsm">
+  <div class="cs" style="--accent:#c8361f;--tint:#fbe4df">
+    <header class="cs-hero">
+      <div class="cs-hero-copy">
+        <p class="cs-kind">Robotics & IoT · Team project, 2024</p>
+        <h2 id="sheet-title">Red Soil Monster</h2>
+        <p class="cs-lede">An automated irrigation and soil-monitoring robot that waters plants only when the soil needs it, with a mobile app to watch and control it remotely.</p>
+      </div>
+      <div class="cs-hero-media"><img src="assets/img/rsm/plant-app.webp" alt="Soil sensor in a plant pot with the mobile app showing 47% moisture"></div>
+    </header>
+    <dl class="cs-meta">
+      <div><dt>Type</dt><dd>Team robotics project</dd></div>
+      <div><dt>Hardware</dt><dd>ESP32 and soil moisture sensor</dd></div>
+      <div><dt>Software</dt><dd>Mobile app for remote control</dd></div>
+      <div><dt>Goal</dt><dd>Water only when the soil needs it</dd></div>
+    </dl>
+    <section class="cs-sec">
+      <h3>Objectives</h3>
+      <ul class="ticks">
+        <li>Build a reliable irrigation system that keeps soil moisture at the right level.</li>
+        <li>Use soil moisture sensing to trigger watering at preset thresholds.</li>
+        <li>Design a simple mobile app interface for remote monitoring and control.</li>
+        <li>Optimize overall performance and power use.</li>
+      </ul>
+    </section>
+    <section class="cs-sec">
+      <h3>Outcome</h3>
+      <p>A fully working automated irrigation and soil-monitoring system. It demonstrated targeted watering based on real moisture readings, with the app giving remote access and control.</p>
+      <div class="boards boards-3">
+        <figure><img src="assets/img/rsm/app.webp" alt="Mobile app controlling the robot" loading="lazy"><figcaption>The mobile app</figcaption></figure>
+        <figure><img src="assets/img/rsm/robot.webp" alt="The red robot body" loading="lazy"><figcaption>The robot</figcaption></figure>
+        <figure><img src="assets/img/rsm/robot-build.webp" alt="Robot during testing" loading="lazy"><figcaption>Testing</figcaption></figure>
+      </div>
+    </section>
+    <section class="cs-sec">
+      <h3>Making of</h3>
+      <video class="cs-video" src="assets/video/rsm-making-of.mp4" poster="assets/img/rsm/poster.webp" controls preload="none" playsinline muted></video>
+    </section>
+    <section class="cs-sec">
+      <h3>Where it could go next</h3>
+      <ul class="ticks">
+        <li>Renewable power sources for a more sustainable system.</li>
+        <li>More sensors for environmental monitoring and plant mineral levels.</li>
+        <li>Recognizing each crop and adjusting to its specific needs.</li>
+        <li>Field testing with real users to keep improving it.</li>
+      </ul>
+      <figure class="wide-fig"><img src="assets/img/rsm/system.webp" alt="Concept diagram of a connected smart irrigation system" loading="lazy"><figcaption>The bigger picture: connected smart irrigation</figcaption></figure>
+    </section>
+  </div>
+</template>
 
 <script src="main.js"></script>
 </body>
