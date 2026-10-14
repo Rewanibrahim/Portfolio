@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rewan Ibrahim · UI/UX Designer & Front-End Developer</title>
+<meta name="description" content="Rewan Ibrahim designs mobile apps and dashboards in Figma and builds them in code. Case studies: BloomTech, Happy Tails, Closet, TMHM.">
+<meta property="og:title" content="Rewan Ibrahim · UI/UX Designer & Front-End Developer">
+<meta property="og:description" content="Mobile apps and dashboards, from user research to Figma prototypes to working code.">
+<meta property="og:image" content="assets/img/bloomtech/browse.webp">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#work">Skip to work</a>
+
+<header class="nav" id="top">
+  <a class="brand" href="#top" aria-label="Rewan Ibrahim, home">
+    <span class="brand-mark" aria-hidden="true">R</span>
+    <span>Rewan Ibrahim</span>
+  </a>
+  <nav aria-label="Main">
+    <a href="#work">Work</a>
+    <a href="#process">Process</a>
+    <a href="#toolkit">Toolkit</a>
+    <a href="#experience">Experience</a>
+    <a class="nav-cta" href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+<!-- HERO: a Figma-like canvas that turns into code -->
+<section class="hero">
+  <div class="hero-copy">
+    <p class="hero-hello">Hi, I'm Rewan.</p>
+    <h1>I design interfaces in Figma and build&nbsp;them in code.</h1>
+    <p class="hero-sub">UI/UX designer and front-end developer in Alexandria, Egypt. I take mobile apps and dashboards from user interviews to high-fidelity prototypes, and hand developers files they can actually build.</p>
+    <div class="hero-actions">
+      <a class="btn btn-ink" href="#work">See the case studies</a>
+      <a class="btn btn-line" href="https://www.behance.net/rewanibrahem1" target="_blank" rel="noopener">Behance</a>
+    </div>
+    <dl class="hero-facts">
+      <div><dt>Screens designed</dt><dd data-count="77">77</dd></div>
+      <div><dt>Shipped with developers</dt><dd>2 apps</dd></div>
+      <div><dt>CS & AI degree, CGPA</dt><dd>3.73</dd></div>
+    </dl>
+  </div>
+
+  <div class="canvas" aria-label="Animated illustration: a Figma frame being selected and turned into CSS" role="img">
+    <div class="canvas-bar">
+      <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+      <span class="canvas-file">BloomTech / Home</span>
+      <span class="canvas-zoom">100%</span>
+    </div>
+    <div class="canvas-stage">
+      <div class="frame-label">iPhone 16 Pro Max</div>
+      <div class="phone hero-phone">
+        <img src="assets/img/bloomtech/browse.webp" alt="" width="440" height="956">
+      </div>
+      <div class="selection">
+        <i></i><i></i><i></i><i></i>
+        <span class="sel-size">Card / Plant system</span>
+      </div>
+      <div class="chip chip-1">Auto layout</div>
+      <div class="chip chip-2">Component</div>
+      <div class="chip chip-3">Dev Mode</div>
+      <div class="cursor" aria-hidden="true">
+        <svg width="18" height="18" viewBox="0 0 18 18"><path d="M1 1l6 15 2.4-6.6L16 7z" fill="currentColor" stroke="#fff" stroke-width="1.2"/></svg>
+        <span>Rewan</span>
+      </div>
+    </div>
+    <pre class="code" aria-hidden="true"><code id="typed"></code><span class="caret"></span></pre>
+  </div>
+</section>
+
+<!-- WORK -->
+<section class="work" id="work" aria-labelledby="work-h">
+  <div class="section-head">
+    <h2 id="work-h">Selected work</h2>
+    <p>Four apps, each taken from a problem to a set of screens someone could build. Click any screen to see it full size.</p>
+  </div>
+
+  <!-- BloomTech -->
+  <article class="case" id="bloomtech" style="--accent:#3f6b3a; --tint:#e4ece0;">
+    <div class="case-intro">
+      <img class="case-logo" src="assets/img/bloomtech/logo.webp" alt="BloomTech logo" width="120" height="100" loading="lazy">
+      <div>
+        <h3>BloomTech</h3>
+        <p class="case-kind">Smart agriculture monitoring app · Graduation project, 2025</p>
+      </div>
+    </div>
+    <div class="case-body">
+      <div class="case-text">
+        <p class="lede">A B2B app that helps agricultural companies watch large farms and gardens through IoT sensors, so non-technical staff can see what needs attention without reading raw data.</p>
+        <dl class="case-meta">
+          <div><dt>Role</dt><dd>Sole UI/UX designer, team of 6</dd></div>
+          <div><dt>Scope</dt><dd>26 screens, user & admin flows</dd></div>
+          <div><dt>Built with</dt><dd>Figma → Flutter, Firebase, real hardware</dd></div>
+        </dl>
+        <h4>What I did</h4>
+        <ul class="ticks">
+          <li>Owned the end-to-end UI/UX: onboarding, user and admin registration, home, plant management, profile, notifications and settings.</li>
+          <li>Designed a live sensor dashboard for soil moisture, pH, EC and light, with alerts that flag readings needing action.</li>
+          <li>Designed a scan flow that circles diseased areas on a leaf photo and explains how to treat them.</li>
+          <li>Handed off Figma files to 2 Flutter developers, who built a working app connected to real sensors.</li>
+        </ul>
+      </div>
+      <div class="strip" tabindex="0" aria-label="BloomTech screens, scroll horizontally">
+        <figure><img src="assets/img/bloomtech/welcome.webp" alt="Welcome screen with plant photography" loading="lazy" width="440" height="956"><figcaption>Welcome</figcaption></figure>
+        <figure><img src="assets/img/bloomtech/login.webp" alt="Login screen with user and admin toggle" loading="lazy" width="440" height="956"><figcaption>Login, user / admin</figcaption></figure>
+        <figure><img src="assets/img/bloomtech/browse.webp" alt="Home screen showing a plant system card" loading="lazy" width="440" height="956"><figcaption>Home</figcaption></figure>
+        <figure><img src="assets/img/bloomtech/home-hero.webp" alt="Tools catalogue" loading="lazy" width="456" height="956"><figcaption>Tools</figcaption></figure>
+        <figure><img src="assets/img/bloomtech/sensor.webp" alt="Sensor dashboard with soil moisture, pH, EC and light rings" loading="lazy" width="440" height="956"><figcaption>Sensor dashboard</figcaption></figure>
+        <figure><img src="assets/img/bloomtech/scan-result.webp" alt="Disease scan result with circled areas on a leaf" loading="lazy" width="440" height="956"><figcaption>Disease scan result</figcaption></figure>
+        <figure><img src="assets/img/bloomtech/notifications.webp" alt="Notifications for water, light and pH alerts" loading="lazy" width="440" height="956"><figcaption>Alerts</figcaption></figure>
+        <figure><img src="assets/img/bloomtech/reference.webp" alt="Reference readings for mint, thyme and basil" loading="lazy" width="440" height="956"><figcaption>Plant reference</figcaption></figure>
+        <figure><img src="assets/img/bloomtech/add-plant.webp" alt="Add plant form with pH, EC and moisture inputs" loading="lazy" width="440" height="956"><figcaption>Add plant</figcaption></figure>
+        <figure><img src="assets/img/bloomtech/admin-home.webp" alt="Admin home with services" loading="lazy" width="440" height="956"><figcaption>Admin home</figcaption></figure>
+        <figure><img src="assets/img/bloomtech/machines.webp" alt="Machines catalogue" loading="lazy" width="440" height="956"><figcaption>Machines</figcaption></figure>
+        <figure><img src="assets/img/bloomtech/profile.webp" alt="Profile screen" loading="lazy" width="440" height="956"><figcaption>Profile</figcaption></figure>
+      </div>
+    </div>
+  </article>
+
+  <!-- Happy Tails -->
+  <article class="case" id="happytails" style="--accent:#1c8f9c; --tint:#dcf1f3;">
+    <div class="case-intro">
+      <span class="case-badge" aria-hidden="true">🐾</span>
+      <div>
+        <h3>Happy Tails</h3>
+        <p class="case-kind">Pet care mobile app & landing page · Route UI/UX Diploma, 2025</p>
+      </div>
+    </div>
+    <div class="case-body">
+      <div class="case-text">
+        <p class="lede">One app for a pet's food, vet visits and vaccination dates, shaped around what owners told me about their daily routines.</p>
+        <dl class="case-meta">
+          <div><dt>Role</dt><dd>UI/UX designer, solo</dd></div>
+          <div><dt>Research</dt><dd>3 interviews, survey of 15 owners</dd></div>
+          <div><dt>Output</dt><dd>18 screens, clickable prototype, landing page</dd></div>
+        </dl>
+        <ol class="steps">
+          <li><b>Listen.</b> Interviewed 3 pet owners and surveyed 15, then synthesized the findings into personas, empathy maps and affinity maps.</li>
+          <li><b>Decide.</b> Turned the research into three core features: pet profiles, vaccination reminders and pet-supply shopping.</li>
+          <li><b>Map.</b> Built user flows around owners' daily routines.</li>
+          <li><b>Design.</b> 18 high-fidelity screens linked into a clickable prototype, plus a marketing landing page.</li>
+        </ol>
+      </div>
+      <div class="boards">
+        <figure class="board board-wide"><img src="assets/img/happytails/cover.webp" alt="Happy Tails cover with app mockups" loading="lazy"><figcaption>Cover</figcaption></figure>
+        <figure class="board"><img src="assets/img/happytails/home-products.webp" alt="Home, product list and product details screens" loading="lazy"><figcaption>Home & shopping</figcaption></figure>
+        <figure class="board"><img src="assets/img/happytails/vets-favorites.webp" alt="Nearby vets, vet info and favorites screens" loading="lazy"><figcaption>Vets & favorites</figcaption></figure>
+        <figure class="board"><img src="assets/img/happytails/profile-pets.webp" alt="Profile, pet details and my pets screens" loading="lazy"><figcaption>Pet profiles & reminders</figcaption></figure>
+        <figure class="board"><img src="assets/img/happytails/onboarding.webp" alt="Onboarding screens with pet photos" loading="lazy"><figcaption>Onboarding</figcaption></figure>
+        <figure class="board board-wide"><img src="assets/img/happytails/landing.webp" alt="Happy Tails marketing landing page" loading="lazy"><figcaption>Landing page</figcaption></figure>
+      </div>
+    </div>
+  </article>
+
+  <!-- Closet -->
+  <article class="case" id="closet" style="--accent:#7a4e22; --tint:#f1e6da;">
+    <div class="case-intro">
+      <span class="case-badge serif" aria-hidden="true">C</span>
+      <div>
+        <h3>Closet</h3>
+        <p class="case-kind">Fashion e-commerce mobile app · Route UI/UX Diploma, 2025</p>
+      </div>
+    </div>
+    <div class="case-body">
+      <div class="case-text">
+        <p class="lede">A calm, warm shopping app that takes people from first launch to a placed order in as few decisions as possible.</p>
+        <dl class="case-meta">
+          <div><dt>Role</dt><dd>UI/UX designer, solo</dd></div>
+          <div><dt>Scope</dt><dd>18 screens, onboarding to checkout</dd></div>
+          <div><dt>System</dt><dd>Reusable component library</dd></div>
+        </dl>
+        <h4>What I did</h4>
+        <ul class="ticks">
+          <li>Ran a competitive analysis of fashion apps and created proto-personas to define the information architecture for women's, men's and kids' categories.</li>
+          <li>Designed the full journey: onboarding, sign in, browsing, favorites, product details, cart, checkout and order tracking.</li>
+          <li>Built a component library for product cards, filters and navigation, with shared color and type styles.</li>
+        </ul>
+      </div>
+      <div class="boards">
+        <figure class="board board-wide"><img src="assets/img/closet/cover.webp" alt="Closet cover with app mockups" loading="lazy"><figcaption>Cover</figcaption></figure>
+        <figure class="board"><img src="assets/img/closet/onboarding.webp" alt="Three onboarding screens" loading="lazy"><figcaption>Onboarding</figcaption></figure>
+        <figure class="board"><img src="assets/img/closet/favorites-product.webp" alt="Favorites list and product details" loading="lazy"><figcaption>Favorites & product</figcaption></figure>
+        <figure class="board"><img src="assets/img/closet/cart-checkout.webp" alt="Cart, checkout and order tracking" loading="lazy"><figcaption>Cart, checkout, tracking</figcaption></figure>
+        <figure class="board"><img src="assets/img/closet/auth-profile.webp" alt="Sign up, sign in and profile" loading="lazy"><figcaption>Auth & profile</figcaption></figure>
+      </div>
+    </div>
+  </article>
+
+  <!-- TMHM -->
+  <article class="case case-compact" id="tmhm" style="--accent:#4a4fd1; --tint:#e5e6fb;">
+    <div class="case-intro">
+      <span class="case-badge" aria-hidden="true">T</span>
+      <div>
+        <h3>TMHM</h3>
+        <p class="case-kind">Courses & jobs mobile app · University project, 2023</p>
+      </div>
+    </div>
+    <div class="case-body">
+      <div class="case-text">
+        <p class="lede">An app for finding courses and jobs in one place. I was the team's only designer, then helped build it.</p>
+        <dl class="case-meta">
+          <div><dt>Role</dt><dd>UI designer & Flutter developer, team of 3</dd></div>
+          <div><dt>Scope</dt><dd>15 screens</dd></div>
+          <div><dt>Built with</dt><dd>Figma, Flutter, Firebase</dd></div>
+        </dl>
+        <ul class="ticks">
+          <li>Designed all 15 screens, then co-developed the app in Flutter and Firebase, including course and job search filters and user profiles.</li>
+        </ul>
+      </div>
+      <div class="boards" id="tmhm-boards"></div>
+    </div>
+  </article>
+</section>
+
+<!-- DESIGN TO CODE -->
+<section class="handoff" aria-labelledby="handoff-h">
+  <div class="handoff-copy">
+    <h2 id="handoff-h">Designs that survive the handoff</h2>
+    <p>I studied Computer Science & AI and have shipped front-end and back-end code, so I design with the build in mind: real components, consistent spacing, states for every screen, and Dev Mode-ready files.</p>
+    <p>At Ora Design, a small online event-print business, I studied how the owner ran orders, products and accounting in Excel, then designed and built a web dashboard around that workflow in 3 weeks. It replaced the spreadsheets she used to manage her orders.</p>
+  </div>
+  <div class="stack-card">
+    <div class="stack-row"><span>Design</span><p>Figma · Auto Layout · Variants · Prototyping · Dev Mode · FigJam</p></div>
+    <div class="stack-row"><span>Front end</span><p>HTML · CSS · JavaScript · Flutter</p></div>
+    <div class="stack-row"><span>Back end</span><p>Node.js · Express · MongoDB · Firebase</p></div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process" id="process" aria-labelledby="process-h">
+  <div class="section-head">
+    <h2 id="process-h">How a project moves</h2>
+    <p>The same path every time, scaled to the project.</p>
+  </div>
+  <ol class="flow">
+    <li><h3>Research</h3><p>Interviews, surveys and competitive analysis to find what people actually struggle with.</p></li>
+    <li><h3>Synthesize</h3><p>Personas, empathy and affinity maps that turn notes into decisions.</p></li>
+    <li><h3>Structure</h3><p>Information architecture and user flows before any pixels.</p></li>
+    <li><h3>Design</h3><p>High-fidelity screens built from a component library, linked into a prototype.</p></li>
+    <li><h3>Hand off</h3><p>Dev Mode-ready files, and a designer who can read the code.</p></li>
+  </ol>
+</section>
+
+<!-- TOOLKIT -->
+<section class="toolkit" id="toolkit" aria-labelledby="toolkit-h">
+  <div class="section-head">
+    <h2 id="toolkit-h">Toolkit</h2>
+  </div>
+  <div class="layers" role="list">
+    <div class="layer" role="listitem"><h3>Research</h3><p>User interviews, surveys, competitive analysis, personas, empathy mapping, affinity mapping</p></div>
+    <div class="layer" role="listitem"><h3>Structure</h3><p>Information architecture, user flows, user-centered design</p></div>
+    <div class="layer" role="listitem"><h3>Interface</h3><p>UI & visual design, interaction design, mobile app design, dashboard design, responsive design</p></div>
+    <div class="layer" role="listitem"><h3>Systems</h3><p>Component libraries, variants, shared color & type styles, developer handoff</p></div>
+    <div class="layer" role="listitem"><h3>Tools</h3><p>Figma, FigJam, Canva, Trello</p></div>
+    <div class="layer" role="listitem"><h3>Code</h3><p>HTML, CSS, JavaScript, Flutter, Firebase, Node.js, MongoDB</p></div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="experience" id="experience" aria-labelledby="exp-h">
+  <div class="section-head">
+    <h2 id="exp-h">Experience</h2>
+  </div>
+  <ol class="timeline">
+    <li><time>Feb – Sep 2026</time><div><h3>Teaching Assistant</h3><p class="org">Faculty of Computer Science & AI, Pharos University in Alexandria</p><p>Ran programming, algorithm design and software quality assurance labs for up to 30 students.</p></div></li>
+    <li><time>Oct – Dec 2025</time><div><h3>UI/UX Design Diploma</h3><p class="org">Route Training, Alexandria</p><p>Happy Tails and Closet were designed here.</p></div></li>
+    <li><time>Aug 2025</time><div><h3>Freelance UI/UX Designer & Developer</h3><p class="org">Ora Design, remote</p><p>Designed and built an order-management dashboard that replaced the owner's spreadsheets.</p></div></li>
+    <li><time>2021 – 2025</time><div><h3>B.Sc. Computer Science & Artificial Intelligence</h3><p class="org">Pharos University in Alexandria · CGPA 3.73 / 4.0</p></div></li>
+    <li><time>Jul – Sep 2024</time><div><h3>Back-End Developer Intern</h3><p class="org">Route Training, Alexandria</p><p>E-commerce backend in Node.js, Express and MongoDB.</p></div></li>
+    <li><time>Jul – Oct 2023</time><div><h3>Front-End Developer Intern</h3><p class="org">AMIT Learning, Alexandria</p><p>Responsive website in HTML, CSS and JavaScript.</p></div></li>
+  </ol>
+  <div class="side-project">
+    <img src="assets/img/misc/rsm.webp" alt="" loading="lazy" width="200" height="150" onerror="this.remove()">
+    <div>
+      <h3>Also built: Red Soil Monster</h3>
+      <p>A team robotics project: an automated irrigation and soil-monitoring system that waters plants when moisture drops below a threshold, with a mobile app for remote monitoring.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact" aria-labelledby="contact-h">
+  <h2 id="contact-h">Let's design something people can use.</h2>
+  <p>Open to junior UI/UX and front-end roles, remote or in Alexandria. Arabic native, English B2.</p>
+  <div class="contact-links">
+    <a class="btn btn-light" href="mailto:irewan28@gmail.com">irewan28@gmail.com</a>
+    <a class="btn btn-ghost" href="https://www.linkedin.com/in/rewan-ibrahim-762911322" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn btn-ghost" href="https://www.behance.net/rewanibrahem1" target="_blank" rel="noopener">Behance</a>
+  </div>
+  <p class="foot">Designed in Figma, hand-coded in HTML, CSS and JavaScript. © 2026 Rewan Ibrahim</p>
+</section>
+</main>
+
+<dialog class="lightbox" id="lightbox" aria-label="Screen preview">
+  <button class="lb-close" type="button" aria-label="Close preview">×</button>
+  <button class="lb-nav lb-prev" type="button" aria-label="Previous screen">‹</button>
+  <figure><img alt=""><figcaption></figcaption></figure>
+  <button class="lb-nav lb-next" type="button" aria-label="Next screen">›</button>
+</dialog>
+
+<script src="main.js"></script>
+</body>
+</html>
