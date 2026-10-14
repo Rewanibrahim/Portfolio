@@ -91,9 +91,9 @@
     lbCap.textContent = `${project} · ${cap} (${idx + 1} of ${group.length})`;
   };
   document.addEventListener('click', (e) => {
-    const img = e.target.closest('.strip img, .board img');
+    const img = e.target.closest('.strip img, .board img, .research img');
     if (!img) return;
-    group = [...img.closest('.case').querySelectorAll('.strip img, .board img')];
+    group = [...img.closest('.case').querySelectorAll('.strip img, .board img, .research img')];
     show(group.indexOf(img));
     lb.showModal();
   });

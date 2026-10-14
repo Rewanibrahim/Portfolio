@@ -247,3 +247,32 @@ p{margin:0}
   *,*::before,*::after{animation-duration:.01ms!important;animation-delay:0s!important;transition:none!important}
   .ready .cursor{transform:translate(70px,335px)}
 }
+
+/* research boards */
+.research-note{color:var(--muted);margin:0 0 12px}
+.pains{list-style:none;display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0 0 14px}
+.pains li{padding:7px 12px;border-radius:999px;background:var(--tint);color:var(--accent);font-weight:600;font-size:15px}
+.case-text h4 + .research-note{margin-top:0}
+.case-text .ticks + h4,.case-text .research-note + h4{margin-top:22px}
+.research{margin-top:28px;padding-top:24px;border-top:1px dashed var(--line)}
+.research h4{font-size:19px;margin-bottom:14px}
+.research-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.research-grid figure{margin:0}
+.research-grid .wide{grid-column:1/-1}
+.research-grid img{width:100%;border-radius:12px;border:1px solid var(--line);cursor:zoom-in;background:#fff}
+.research-grid figcaption{font-size:13.5px;color:var(--muted);margin-top:8px}
+@media (max-width:600px){.research-grid{grid-template-columns:1fr}}
+
+.compare{display:grid;border:1px solid var(--line);border-radius:14px;overflow:hidden;margin:4px 0 6px;font-size:14px;background:var(--white)}
+.cmp-row{display:grid;grid-template-columns:1.6fr repeat(4,1fr);align-items:center}
+.cmp-row + .cmp-row{border-top:1px solid var(--line)}
+.cmp-row > *{padding:9px 10px}
+.cmp-head{background:var(--tint);font-weight:600;font-size:13px;color:var(--accent)}
+.cmp-row i{font-style:normal;text-align:center;font-weight:600}
+.cmp-row i.y{color:var(--accent)}
+.cmp-row i.n{color:#9aa39f;font-weight:400}
+.cmp-row > :last-child{background:color-mix(in srgb,var(--tint) 55%,transparent)}
+.cmp-cap{font-size:13px;color:var(--muted);margin:0 0 22px}
+.quote{margin:0 0 12px;padding:12px 16px;border-left:3px solid var(--accent);background:var(--tint);border-radius:0 12px 12px 0;font-family:var(--display);font-size:17px;line-height:1.4}
+.quote cite{display:block;font:500 13px/1.4 var(--body);color:var(--muted);margin-top:6px;font-style:normal}
+@media (max-width:600px){.compare{font-size:12.5px}.cmp-row{grid-template-columns:1.3fr repeat(4,1fr)}.cmp-row > *{padding:8px 5px}}
